@@ -1,0 +1,1 @@
+function r(n,l){let t=n.trim();const e=t.startsWith("+");if(t=t.replace(/\D/g,""),!e&&t.startsWith("00"))t=t.slice(2);else if(!e)return null;return t.length<8||t.length>15?null:`https://wa.me/${t}?text=${encodeURIComponent(l)}`}export{r as w};
